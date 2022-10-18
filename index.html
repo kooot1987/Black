@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"minimum-scale=1, maximum-scale=1> 
+        <title>Black sea</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    </head>
+    <body>
+        <div class="header-wrap">
+            <header class="header">
+                <div class="header-top">
+                    <a class="logo_a" href="#">
+                        <h1 class="logo">Black Sea</h1>
+                    </a>
+                    <div class="navigation">
+                        <ul>
+                            <li class="list active">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="home-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Home</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="person-circle-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">About Me</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="newspaper-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Portfolio</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#">
+                                    <span class="icon">
+                                        <ion-icon name="call-outline"></ion-icon>
+                                    </span>
+                                    <span class="text">Contact</span>
+                                </a>
+                            </li>
+                            <div class="indicator"></div>
+                        </ul>
+                    </div>
+                </div>
+                     <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <img class="swiper-slide" src="css/img/121212.jpg">
+                          <img class="swiper-slide" src="css/img/131313.jpg">
+                          <img class="swiper-slide" src="css/img/141414.jpg">
+                          <img class="swiper-slide" src="css/img/15151515.jpg">
+                          <img class="swiper-slide" src="css/img/161616.jpg">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+            </header>
+        </div>
+        <div class="conteiner_header">
+        <div class="header_content">
+          <h1 class="title_header">We need the tonic of<br>
+               wildness</h1>
+            </div>
+            <a class="button_shiled" href="#">
+                <span></span>
+                Read more
+             </a>
+             <div class="img_shiled">
+                <img src="css/img/shape-11.png">
+                <img src="css/img/shape-22.png">
+                <img src="css/img/shape-33.png">
+             </div>
+        </div>
+        <div class="main">
+            <div class="conteiner_main">
+               <img class="main_img" src="css/img/layer-333.png">
+               <h3 class="dhavan">dhavan</h3>
+               <p class="text_main">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's<br>
+                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to<br>
+                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
+            </div>
+        </div>
+        <div class="footer">
+            <img class="img_footer" src="css/img/layer-4.png">
+            <form action="action_page.php">
+                <div class="container">
+                  <input type="text" placeholder="Name" name="name" required>
+                  <input type="text" placeholder="Email address" name="mail" required>
+                  <input type="text" placeholder="Message" name="message" required>
+                </div>
+              </form>
+              <button class="btn_success">Success</button>
+        </div>
+        <div class="foter_end">
+            <div class="teddy">
+                <h3 class="text_teddy">Copyright © 2012 Css Author.com</h3>
+            </div>
+        </div>
+      </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+          
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          
+          });
+        </script>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+                list.forEach((item) =>
+                item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click' ,activeLink));
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>    
